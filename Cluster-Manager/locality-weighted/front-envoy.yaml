@@ -36,6 +36,8 @@ static_resources:
     connect_timeout: 0.25s
     type: STRICT_DNS
     lb_policy: ROUND_ROBIN
+    common_lb_config:
+      locality_weighted_lb_config: {}
     http2_protocol_options: {}
     load_assignment:
       cluster_name: webcluster1
